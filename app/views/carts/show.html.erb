@@ -5,6 +5,12 @@
   </header>
 
   <div class="panel panel-default items">
+  <% if (enhanced_cart.length < 1) %>
+    <div class="empty-cart-alert">
+      <h1>Your Cart is Empty!</h1>
+      <p>Return to the <a href="http://localhost:3000/">Home page</a></p>
+    </div>
+  <% else %>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -50,3 +56,4 @@
   </div>
 
 </section>
+<% end %>
